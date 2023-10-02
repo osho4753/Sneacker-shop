@@ -1,0 +1,23 @@
+[
+    {
+    "id":1,
+    "name":"Air Jordan",
+    "price":1500,
+    "imageUrl":"/images/Air JOrdan.jpeg"
+},{
+    "id":2,
+    "name":"Adidas Campus",
+    "price":1350,
+    "imageUrl":"/images/Campus.jpeg"
+},{
+    "id":3,
+    "name":"Nike Dunk",
+    "price":1700,
+    "imageUrl":"/images/DUNK.jpeg"
+},{
+    "id":4,
+    "name":"Nike AJ1",
+    "price":1640,
+    "imageUrl":"/images/AJ1.jpeg"
+}
+]
