@@ -1,7 +1,10 @@
 import { Container, Navbar as NavbarBs, Nav, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { useShoppingCart } from "../context/ShoppingContext";
 
 export function Navbar() {
+  const {openCart,cartQuantity} = useShoppingCart()
+
   return (
     <NavbarBs sticky="top" className="bg-white shadow-lg mb-3">
       <Container>
@@ -16,7 +19,8 @@ export function Navbar() {
             About
           </NavLink>
         </Nav>
-        <Button
+        <Button 
+            onClick={openCart}
             variant="outline-primary"  
             className="rounded-circle"
             style={{
@@ -40,7 +44,7 @@ export function Navbar() {
         right:0,
         transform:"translate(25%,25%)"
         }}>
-            3
+            {cartQuantity}
         </div>
         </Button>
       </Container>
